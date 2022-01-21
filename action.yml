@@ -1,0 +1,14 @@
+name: 'Fargate Service'
+description: 'Starts Fargate service for self hoste'
+author: 'Guilherme Afonso'
+
+inputs:
+  GITHUB_ACCESS_TOKEN:
+    description: 'Github Token'
+    required: true
+  GITHUB_ACTIONS_RUNNER_CONTEXT:
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
